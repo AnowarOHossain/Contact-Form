@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hey, I'm Anowar Hossain – Share Your Thoughts!</title>
+    <style>
+        body {
+            background: linear-gradient(to right, #eef2f3, #8ec5fc);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            position: relative;
+            overflow: hidden;
+        }
+        .form-container {
+            background: linear-gradient(to bottom right, #ffffff, #d4eaff);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 350px;
+            text-align: center;
+            position: relative;
+            z-index: 2;
+        }
+        h2 {
+            color: #333;
+        }
+        label {
+            display: block;
+            text-align: left;
+            font-weight: bold;
+            margin: 10px 0 5px;
+            color: #555;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 8px;
+            background: rgba(255, 255, 255, 0.7);
+            margin-bottom: 10px;
+            font-size: 16px;
+            outline: none;
+            box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        button {
+            background: #6a11cb;
+            color: white;
+            border: none;
+            padding: 12px;
+            width: 100%;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        button:hover {
+            background: #2575fc;
+        }
+        .bubble {
+            position: absolute;
+            background: rgba(255, 255, 255, 0.3);
+            border-radius: 50%;
+            animation: move 4s infinite alternate ease-in-out;
+        }
+        .bubble:nth-child(1) {
+            width: 100px;
+            height: 100px;
+            left: 10%;
+            top: 10%;
+            background: #ff7eb3;
+            animation-duration: 3.5s;
+        }
+        .bubble:nth-child(2) {
+            width: 80px;
+            height: 80px;
+            left: 20%;
+            bottom: 10%;
+            background: #ffb677;
+            animation-duration: 4s;
+        }
+        .bubble:nth-child(3) {
+            width: 120px;
+            height: 120px;
+            right: 10%;
+            top: 20%;
+            background: #57c1eb;
+            animation-duration: 3s;
+        }
+        .bubble:nth-child(4) {
+            width: 90px;
+            height: 90px;
+            right: 15%;
+            bottom: 15%;
+            background: #2af598;
+            animation-duration: 3.7s;
+        }
+        .bubble:nth-child(5) {
+            width: 70px;
+            height: 70px;
+            left: 5%;
+            bottom: 50%;
+            background: #ff7eb3;
+            animation-duration: 3.2s;
+        }
+        .bubble:nth-child(6) {
+            width: 60px;
+            height: 60px;
+            right: 5%;
+            top: 50%;
+            background: #ffb677;
+            animation-duration: 3.8s;
+        }
+        @keyframes move {
+            from {
+                transform: translateY(0px);
+            }
+            to {
+                transform: translateY(30px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    
+    <div class="form-container">
+        <h2>Hey, I'm Anowar Hossain – Share Your Thoughts!</h2>
+        <form action="https://formspree.io/f/xdkkqeea" method="post">
+            <label for="name">What should I call you?</label>
+            <input name="name" id="name" type="text" placeholder="Enter your name">
+            
+            <label for="email">Your email, so I can get back to you!</label>
+            <input name="email" id="email" type="email" placeholder="Enter your email">
+            
+            <label for="message">Have a question or just want to say hi?</label>
+            <textarea name="message" id="message" cols="30" rows="5" placeholder="Write your message..."></textarea>
+            
+            <button type="submit">Send Message 🚀</button>
+        </form>
+    </div>
+</body>
+</html>
