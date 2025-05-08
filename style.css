@@ -1,0 +1,152 @@
+body {
+    background: linear-gradient(to right, #eef2f3, #8ec5fc);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    position: relative;
+    overflow: hidden;
+}
+.form-container {
+    background: linear-gradient(to bottom right, #ffffff, #d4eaff);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+h2 {
+    color: #333;
+}
+label {
+    display: block;
+    text-align: left;
+    font-weight: bold;
+    margin: 10px 0 5px;
+    color: #555;
+}
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.7);
+    margin-bottom: 10px;
+    font-size: 16px;
+    outline: none;
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+button {
+    background: #6a11cb;
+    color: white;
+    border: none;
+    padding: 12px;
+    width: 100%;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+button:hover {
+    background: #2575fc;
+}
+.bubble {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    animation: move 4s infinite alternate ease-in-out;
+}
+.bubble:nth-child(1) {
+    width: 100px;
+    height: 100px;
+    left: 10%;
+    top: 10%;
+    background: #ff7eb3;
+    animation-duration: 3.5s;
+}
+.bubble:nth-child(2) {
+    width: 80px;
+    height: 80px;
+    left: 20%;
+    bottom: 10%;
+    background: #ffb677;
+    animation-duration: 4s;
+}
+.bubble:nth-child(3) {
+    width: 120px;
+    height: 120px;
+    right: 10%;
+    top: 20%;
+    background: #57c1eb;
+    animation-duration: 3s;
+}
+.bubble:nth-child(4) {
+    width: 90px;
+    height: 90px;
+    right: 15%;
+    bottom: 15%;
+    background: #2af598;
+    animation-duration: 3.7s;
+}
+.bubble:nth-child(5) {
+    width: 70px;
+    height: 70px;
+    left: 5%;
+    bottom: 50%;
+    background: #ff7eb3;
+    animation-duration: 3.2s;
+}
+.bubble:nth-child(6) {
+    width: 60px;
+    height: 60px;
+    right: 5%;
+    top: 50%;
+    background: #ffb677;
+    animation-duration: 3.8s;
+}
+@keyframes move {
+    from {
+        transform: translateY(0px);
+    }
+    to {
+        transform: translateY(30px);
+    }
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+body {
+flex-direction: column;
+padding: 15px;
+}
+
+.form-container {
+width: 90%;
+max-width: 350px;
+padding: 20px;
+}
+
+h2 {
+font-size: 18px;
+}
+
+label {
+font-size: 13px;
+}
+
+input, textarea {
+font-size: 14px;
+}
+
+button {
+font-size: 14px;
+padding: 10px;
+}
+
+.bubble {
+opacity: 0.8;
+}
+}
