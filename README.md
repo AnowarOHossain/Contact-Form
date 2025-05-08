@@ -74,7 +74,7 @@ The layout adapts to different screen sizes using media queries, providing an op
 If you’d like to get in touch or collaborate, feel free to:
 
 * Use the contact form on the site
-* Reach out via [GitHub](https://github.com/yourusername)
+* Reach out via [GitHub](https://github.com/anowarohossain)
 
 
 **Made with ❤️ by Anowar Hossain**
