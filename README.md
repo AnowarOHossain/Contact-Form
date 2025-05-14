@@ -24,11 +24,11 @@ This project is a beautifully designed and responsive contact form built using *
 ## 📁 File Structure
 
 
-project/
+project/  
 │
-├── index.html          # Main HTML file
-├── style.css           # CSS styling
-└── README.md           # Project documentation
+├── index.html  
+├── style.css  
+└── README.md  
 
 
 ## 📋 How to Use
