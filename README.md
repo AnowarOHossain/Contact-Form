@@ -25,7 +25,6 @@ This project is a beautifully designed and responsive contact form built using *
 
 
 project/  
-│
 ├── index.html  
 ├── style.css  
 └── README.md  
