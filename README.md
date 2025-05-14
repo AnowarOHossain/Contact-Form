@@ -35,7 +35,7 @@ project/
 
 1. **Clone the repository**:
    bash
-   git clone https://github.com/yourusername/contact-form.git
+   git clone https://github.com/anowarohossain/contact-form.git
    cd contact-form
 
 2. **Open the project in a browser**:
